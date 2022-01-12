@@ -1,0 +1,42 @@
+.logo {
+  font-family: $body-font-family;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $tablet-min) {
+    text-align: center;
+  }
+}
+
+.main-screen-navigation {
+
+  &__logo {
+    flex-grow: 2;
+    padding-top: 31px;
+    padding-bottom: 22px;
+  }
+
+  &__link {
+    padding: 3px;
+
+    &:hover {
+      box-shadow: 0 0 10px rgb(255 255 255 / 50%);
+      transition: 0.2s ease-in-out;
+    }
+
+    &:focus {
+      background-color: #333333;
+    }
+  }
+}
+
+.footer {
+
+  &__logo {
+    letter-spacing: 3.36px;
+    color: $color-default;
+  }
+}

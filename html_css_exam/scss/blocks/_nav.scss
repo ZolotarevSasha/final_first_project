@@ -1,0 +1,65 @@
+.main-screen-navigation {
+  background-color: $button-color;
+
+  @media screen and (max-width: $tablet-min) {
+    top: 0;
+    order: -1;
+    width: 100%;
+    position: relative;
+  }
+
+  &__container {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media screen and (max-width: $tablet-min) {
+      display: block;
+    }
+  }
+}
+
+.menu {
+
+  @media screen and (max-width: $tablet-min) {
+    display: none;
+  }
+
+  .menu__open & {
+    @media screen and (max-width: $tablet-min) {
+      display: block;
+    }
+  }
+
+  &__hamburger {
+    font-size: 35px;
+    color: #333333;
+    cursor: pointer;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    padding: 10px;
+    top: 10px;
+    position: absolute;
+    display: none;
+    transition: all 0.5s linear;
+    right: 10px;
+
+    &:hover {
+      color: #e1c190;
+      border: 1px solid #e1c190;
+    }
+
+    @media screen and (max-width: $tablet-min) {
+      display: block;
+    }
+  }
+}

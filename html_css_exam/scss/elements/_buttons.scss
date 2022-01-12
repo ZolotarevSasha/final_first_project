@@ -1,0 +1,63 @@
+.btn {
+  padding:  27px 45px 18px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $button-color;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darkblue;
+  }
+
+  &:focus {
+    background-color: brown;
+  }
+}
+
+.about__button {
+  margin-top: 14px;
+}
+
+.spain {
+
+  &__button {
+    font-family: $header-font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 20px 65px 18px 58px;
+    letter-spacing: 1.2px;
+
+    &:hover{
+      background-color: rgba(0, 0, 139, 0.5);
+    }
+  }
+}
+
+.main-screen {
+
+  &__search-btn {
+    border: 2px solid #ffffff;
+    background-color: $button-color;
+    font-family: $header-font-family;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1.4px;
+    color: $color-default;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media screen and (max-width: $tablet-max) {
+      padding: 14px 17px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #454f70;
+    }
+  }
+}

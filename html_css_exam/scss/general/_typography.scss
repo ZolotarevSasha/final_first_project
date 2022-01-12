@@ -1,0 +1,25 @@
+.body {
+  font-family: $body-font-family;
+  color: $color-text;
+  margin: 0 auto;
+  width: 100%;
+
+  @media screen and (min-width: $desktop-min) {
+    border: 15px solid #FFFFFF;
+  }
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  @media screen and (max-width: $tablet-min) {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,70 @@
+.main-screen {
+  background-image: url("../image/backgraund1.jpg");
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  max-height: 775px;
+  padding-top: 275px;
+  padding-bottom: 131px;
+  text-align: center;
+
+  &__inner-link{
+    padding-right: 54px;
+  }
+
+  &__title {
+    font-size: 48px;
+    letter-spacing: 4.8px;
+    padding-right: 46px;
+    margin-bottom: 11px;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 40px;
+      padding-right: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-family: $body-font-family;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 6.82px;
+    line-height: 26px;
+    padding-bottom: 51px;
+    padding-right: 46px;
+  }
+
+  &__search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 107px;
+
+    @media screen and (max-width: $tablet-max) {
+      flex-direction: column;
+    }
+
+    &-input {
+      width: 43%;
+      font-family: $body-font-family;
+      color: $color-search-text;
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 2.8px;
+      text-align: center;
+      border: 0;
+      padding: 17px;
+
+      @media screen and (max-width: $tablet-max) {
+        width: 100%;
+        padding: 25px;
+        font-size: 10px;
+        margin-bottom: 15px;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: #f6e89a;
+      }
+    }
+  }
+}
